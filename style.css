@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Secular+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    zoom: 100%;
+}
+
+body {
+    background: rgb(129,131,128);
+    background: linear-gradient(38deg, rgba(129,131,128,1) 30%, rgba(192,192,192,1) 69%);
+}
+
+#navbar{
+    width: 100%;
+    height: 70px;
+    background: rgb(84, 76, 74, 0.5);
+    font-family: josefin sans;
+    font-size: large;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.navbar-brand {
+    font-family: secular one;
+    font-size: bolder;
+}
+
+@media only screen and (max-width: 986px) {  
+        .navbar .navbar-nav {
+        position: absolute;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 400px;
+        width: 2000px;
+        will-change: transform;
+        transition: .5s ease;
+        transform: translate(-150px, -87px);
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(136, 136, 136);
+        z-index: 1;
+        zoom: normal;
+      }
+    
+      .nav-link {
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 150px;
+        margin-right: 150px;
+        display: inline-block;
+        font-size: larger;
+        padding: 10px 10px;
+        padding-top: 10px;
+      }        
+}
+
+@media only screen and (max-width: 768px) {    
+    .navbar .navbar-nav {
+      position: absolute;
+      flex-direction: column;
+      margin-top: 100px;
+      height: 300px;
+      width: 500px;
+      transform: translate(-150px, -87px);
+      will-change: transform;
+      display: flex;
+      flex-direction: column;
+      margin-left: -50px;
+      transition: transform 0.5s ease-in-out;
+      z-index: 1;
+      background-color: rgb(136, 136, 136);
+      zoom: normal;
+    }
+  
+    .nav-link {
+      justify-content: center;
+      display: inline-block;
+      font-size: larger;
+      padding: 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {    
+    .navbar .navbar-nav {
+      position: absolute;
+      flex-direction: column;
+      margin-top: 100px;
+      height: 300px;
+      width: 500px;
+      transform: translate(-150px, -87px);
+      will-change: transform;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.5s ease-in-out;
+      z-index: 5;
+      background-color: rgb(136, 136, 136);
+      zoom: normal;
+    }
+  
+    .nav-link {
+      text-align: center;
+      display: inline-block;
+      font-size: 25px;
+      padding: 10px 0px;
+      z-index: 1;
+    }
+}
+
+
+/* Homepage */
+.banner {
+    height: 95vh;
+    font-weight: bold;
+    background-image: url('../assets/Produk/zyro-image.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h2 {
+    font-family: secular one;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(84, 76, 74, 0.7) 5px 7px 15px;
+    z-index: 1;
+    padding: 20px 25px;
+    letter-spacing: 7px;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.banner a {
+    opacity: 70%;
+    text-decoration: none;
+    letter-spacing: 2px;
+
+}
+
+.banner a:hover{
+    font-family: lucida;
+    font-size: larger;
+    font-style: italic;
+    letter-spacing: 5px;
+
+}
+
+.banner marquee{
+    background: rgba(219, 219, 219, 0.7);
+    width: 100%;
+}
+
+/* Button and form @Produk */
+.btn {
+    cursor: pointer;
+    background-color: dimgray;
+    background-blend-mode: multiply;
+    border-color: lightslategray;
+    transition-duration: 1s;
+    box-shadow: #544C4A 0 5px 15px;
+    border-radius: 4px;
+}  
+.btn:hover {
+    background: #fff;
+    box-shadow:#544C4A 0px 2px 10px 5px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+.btn:after {
+    background: black;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: step-end 0.1s
+  }
+
+.btn:focus { 
+    background: #fff;
+    box-shadow:#544C4A 0px 2px 10px 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+.card {
+    border-radius: 10px;
+    font-family: josefin sans;
+}
+
+.card-body h6{
+    font-family: candara;
+}
+
+/* Produk */
+#price1{color:rgb(0, 0, 0);
+    background: rgb(255, 255, 255); 
+    padding: 3px;
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    box-shadow: rgb(0, 0, 0) -3px -2px 2px 1px; /*1. left-right 2. up-down 3. blur 4. radius*/
+    margin-left: 47px;}
+#price2{color: blue;
+    background: rgb(255, 255, 255); 
+    padding: 3px;
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    box-shadow: blue 0px -2px 2px 1px;
+    margin-left: 47px;}
+#price3{color: rgb(219, 189, 80);
+    background: rgb(255, 255, 255); 
+    padding: 3px;
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    box-shadow: rgb(219, 189, 80) 3px -2px 2px 1px;
+    margin-left: 47px;}
+#price4{color: #544C4A;
+    background: rgb(255, 255, 255); 
+    padding: 3px;
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    box-shadow: #544C4A -3px -2px 2px 1px;
+    margin-left: 47px;}
+#price5{color: rgb(18, 88, 18);
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(18, 88, 18) 0px -2px 2px 1px; 
+    padding: 3px;
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    margin-left: 47px;}
+#price6{color: rgb(199, 199, 49);
+    background: rgb(255, 255, 255); 
+    padding: 3px;
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    box-shadow: rgb(218, 218, 48) 3px -2px 2px 1px;
+    margin-left: 47px;}
+
+/* About */
+section.about{
+    height: 100vh;
+    background-image: url('../assets/Produk/fix.png');
+    background-blend-mode: color-dodge;
+    background-position: top center;
+    background-size: cover;
+    position:relative;
+    display:-webkit-flex;
+    justify-content: center;
+    align-items: center;
+    color: #544C4A;
+    font-family: josefin sans;
+}
+/* Judul About */
+.fs-1{
+    text-shadow: rgb(160, 160, 160, 1) 4px 3px 7px;
+    padding-top: 10px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+/* Isi About */
+.fs-4{
+    padding: 10px 50px 10px 70px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: rgba(160, 160, 160, 0.712) 1px 1px 1px;
+    text-overflow: clip;
+    text-justify: distribute-all-lines;
+}
+
+/* Contact */
+.contact{
+    color: #544C4A;
+    font-family: josefin sans;
+}
+.contact h3 {margin-top: 100px; margin-bottom: 50px;}
+.contact #space1{height: 50px;}
+.contact #space2{height: 50vh;}
+.contact #greetings {
+    z-index: 1;
+    margin-top: 170px;
+    color: silver;
+    font-size: 13px;
+    font-weight: bolder;
+    letter-spacing: 1vh;
+    text-transform: uppercase;
+}
+.contact a {text-decoration: none; color: #544C4A;}
+.contact a:hover {font-style: italic; color: whitesmoke; letter-spacing: 5px;}
+.contact p {font-size: 13px;}
+.contact h3{font-size: 35px; text-shadow: rgba(160, 160, 160, 1) 2px 2px 3px;}
+.contact h4{font-size: 25px; font-weight: bolder; text-shadow: rgba(160, 160, 160, 0.7) 3px 3px 5px;}
+
+/* copyright */
+footer{
+    width: 100%;
+      height: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+      font-family: perpetua;
+      color: #544C4A;
+      font-size: 1em;
+      position: fixed;
+    bottom: 15px;
+}
